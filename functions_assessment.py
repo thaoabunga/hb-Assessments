@@ -17,12 +17,13 @@
 california_sales_tax = 0.07
 normal_sales_tax = 0.05
 
-def input_price():
-	price = float(input('Enter price:'))
-	displayTotals(price)
-
-def calculateStateTax():
-
+def cost(amount, state, tax=0.05):
+	if state == 'CA':
+		tax = 0.07
+	else: 
+		return price = amount + amount * tax
+	print price
+	
 
 
 
@@ -35,8 +36,10 @@ def calculateStateTax():
 fruits = ['strawberry', 'cherry', 'blackberry']
 
 def is_berry():
-	for fruit_name in fruits:
-		if fruit_name is not in fruits:
+		if fruit in fruits:
+			return True
+		else:
+			return False
 			
 	
 
@@ -44,6 +47,8 @@ def is_berry():
 #        by taking a fruit name as a string, calling the `is_berry()` function 
 #        within the `shipping_cost()` function and returns `0` if ``is_berry()
 #        == True``, and `5` if ``is_berry() == False``.
+	def shipping_cost():
+		
 
 # 2. (a) Write a function, `is_hometown()`, which takes a town name as a string
 #        and evaluates to `True` if it is your hometown, and `False` otherwise.
