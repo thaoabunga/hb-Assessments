@@ -116,12 +116,11 @@ def largest_n_items(items, n):
         >>> largest_n_items([3, 3, 3, 2, 1], 2)
         [3, 3]
     """
-    n_largest_ints = []
 
-    for x in items:
-        if len(x)
-    return []
+    if n == 0:
+        return []
 
+    return sorted(items)[len(items)-n:]
 
 #####################################################################
 # END OF ASSESSMENT: You can ignore everything below.
